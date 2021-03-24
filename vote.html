@@ -1,0 +1,143 @@
+<!DOCTYPE	html PUBLIC	"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"	/>
+ <title>注册</title>
+ <style>
+ .regist-group { margin-top: 20px; overflow: hidden; }
+ .regist-label { width: 70px; padding-top: 10px; float: left; }
+ .regist-star { position: absolute; margin-left: -1em; font-family: simsun; color: #f30; }
+ .regist-cell { display: table-cell; *display: inline-block; }
+ .regist-remark { position: absolute; line-height: 21px; color: #666; }
+ .regist-btn { display: inline-block; width: 100px; line-height: 40px; background-color:#cccccc; color: #fff;text-decoration: none; text-align:center}
+ .constr { width: 998px; margin-left: auto; margin-right: auto;padding-left:18%}
+ .father{width:998px;margin-left:auto;margin-right:auto}
+ .left{height: 400px;width:50%;float: left;}
+ .right{height:350px;}
+ body{background: linear-gradient(to bottom,#A9A9A9, #C0C0C0,#D3D3D3,#F5F5F5,#F5F5F5);}
+ .xp{ font-size:30px;text-align:left;color:#FFD700;margin:25px 0;}
+ #header{ width:100%; height:30px; margin:10px 0;}
+ #lg1{ float:left; margin-left:5%;}
+ #nav{ width:100%; height:30px; background:#808080; text-align:center; }
+	  #n1{margin:auto; font-family:Segoe Script;}
+	  a:link,a:visited{ text-decoration:none; display:block; width:200px;
+	                    color:#FFFFFF; text-align:center; line-height:27px; }
+	  a:hover,a:active{background-color:#FFD700;}
+
+      *{ margin:0; padding:0; text-decoration:none;}
+ .title{font-size:60px;margin: 20px;font-family:Segoe Script;}
+ #main{width:980px;margin:10px auto;}
+ #list{overflow:hidden;float:right; margin-right:14%;font-size:20px;}
+ #footer{overflow:hidden;float:bottom;width:100;height:40px;background-color:#808080;margin:20px auto;text-align:center;line-height:50px;color:#ffffff;}
+ </style>
+</head>
+<body>
+  <div id="header">
+     <div id="lg1"><img src="logo.jpg" width="140px" height="80px"></div>
+   </div>
+  <div id="nav">
+     <div id="n1">
+		 <table width="60%" height="30px" align="center" >
+		   <tr>
+			  <td><a href="MVP.html">MVP of season 2020</a></td>
+			  <td><a href="play.html">Playoffs 2020</a></td>
+			  <td><a href="All Star.html">All Star</a></td>
+			  <td><a href="Champion.html">2020 championship</a></td>
+			  <td><a href="vote.html">Regist and Vote</a></td>
+		   </tr>
+		 </table>
+	 </div>
+   </div>
+   <div>
+    <img src="Playoffs 1.jpg" width="100%">
+   </div>
+   <div><p class="title" align="center">Regist and Vote for your favoutite Players!</p></div><p>
+   <div class="regist-body">
+    	<div class="regist-main">
+        	<div class="regist-group">
+			<div class="constr">
+  <div class="father">
+       <div class="left">
+       <div class="regist-group">
+            	<label class="regist-label"><span class="regist-star">*</span>Username</label>
+                <div class="regist-cell">
+                	<input type="password" class="regist-input">
+                </div>
+				</div>
+        <div class="regist-group">
+            	<label class="regist-label"><span class="regist-star">*</span>Password</label>
+                <div class="regist-cell">
+                	<input type="password" class="regist-input"><span class="regist-remark">
+                    	Please enter 6-16 characters
+                    </span>
+                </div>
+				</div>
+       <div class="regist-group">
+          <label class="regist-label"><span class="regist-star">*</span>Confirm password</label>
+          <div class="regist-cell">
+                	<input type="password" class="regist-input"><span class="regist-remark">
+                    	The password must be the same
+                    </span>
+                </div>
+				</div>
+        <div class="regist-group">
+          <label class="regist-label">Do you playing Overwatch?</label>
+    		  <input name="gen" style="border:0px;" type="radio" value="yes" checked="checked" />Yes&nbsp; 
+    	    <input name="gen" style="border:0px;" type="radio" value="no" class="input" />No
+        </div>
+		<div class="regist-group">
+           <label class="regist-label"><span class="regist-star">*</span>Email</label>
+          <div class="regist-cell">
+        	<input name="email" onchange="regCheck(this,5)" type="text" class="reg_text" size="24" />
+<span class="red"></span>
+</div>
+</div>
+        <div class="regist-group">
+          <label class="regist-label"><span class="regist-star">*</span>Date of birth</label>
+    		<input name="nYear" value="yyyy" maxlength="4" />&nbsp;year&nbsp;&nbsp;
+    		   <select name="nMonth">
+    			   <option value="" selected="selected">[Select month]</option>
+    		     <option value="0">Jun</option>
+    		     <option value="1">Feb</option>
+    		     <option value="2">Mar</option>
+    		     <option value="3">Apr</option>
+    		     <option value="4">May</option>
+    		     <option value="5">Jun</option>
+    		     <option value="6">Jul</option>
+    		     <option value="7">Aug</option>
+    		     <option value="8">Sep</option>
+    		     <option value="9">Oct</option>
+    		     <option value="10">Nov</option>
+    		     <option value="11">Dec</option>
+    		  </select>&nbsp;Month&nbsp;&nbsp;
+    		  <input name="nDay" value="dd" size="2" maxlength="2" />Date
+    	    <span class="red"></span>
+			</div>
+		<div class="regist-group">
+            	<label class="regist-label"><span class="regist-star">*</span>Verification code</label>
+                <div class="regist-cell">
+                	<input class="regist-input regist-code-input">
+                </div>
+				</div>
+				</div>
+				</div>
+	  <div class="right">
+    		<h4>Write Players that you like!</h4>
+        	<input name="vote" type="text" style="height:300px;width:300px">
+	</input>
+			</div>		
+			<div class="regist-group">
+            	<label class="regist-label">&nbsp;</label>
+                <div class="regist-cell">
+                	<input type="checkbox" checked><label>Confirm</label>
+                    <p>
+                    	<a href="javascript:" class="regist-btn">Submit！</a>
+                    </p>
+                </div>
+            </div>
+			</div>
+  </div>
+  <div id="footer">Overwatch League Webpage by Yiming Liu</div>
+ </body>
+</body>
+</html>		
